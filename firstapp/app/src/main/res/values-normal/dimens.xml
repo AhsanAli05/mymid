@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="footer_icon_width">40dp</dimen>
+    <dimen name="footer_icon_height">40dp</dimen>
+    <dimen name="heading_text_size">20dp</dimen>
+</resources>

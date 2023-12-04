@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#F4F1F1</color>
+    <color name="primary_normal">#673AB7</color>
+    <color name="primary_normal_night">#E3D9F4</color>
+    <color name="primary_premium">#FF9800</color>
+    <color name="primary_platinum">#009688</color>
+
+    <color name="heading_normal">#E91E63</color>
+    <color name="heading_premium">#03A9F4</color>
+    <color name="heading_platinum">#747C7B</color>
+</resources>

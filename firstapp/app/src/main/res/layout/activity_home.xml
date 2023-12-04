@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/tx_dashbaord"
+            android:gravity="center"
+            android:textColor="?attr/app_heading_color"
+            android:textSize="@dimen/heading_text_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center|right">
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_add"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:layout_marginVertical="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            style="@style/bottomImageContainerStyle">
+
+            <ImageView
+                android:layout_width="@dimen/footer_icon_width"
+                android:layout_height="@dimen/footer_icon_height"
+                android:src="@drawable/ic_home"
+                app:tint="?attr/app_footer_icon_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bottomImageContainerStyle">
+
+            <ImageView
+                android:layout_width="@dimen/footer_icon_width"
+                android:layout_height="@dimen/footer_icon_height"
+                android:src="@drawable/ic_search"
+                app:tint="?attr/app_footer_icon_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bottomImageContainerStyle">
+
+            <ImageView
+                android:layout_width="@dimen/footer_icon_width"
+                android:layout_height="@dimen/footer_icon_height"
+                android:src="@drawable/ic_profile"
+                app:tint="?attr/app_footer_icon_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bottomImageContainerStyle">
+
+            <ImageView
+                android:layout_width="@dimen/footer_icon_width"
+                android:layout_height="@dimen/footer_icon_height"
+                android:src="@drawable/ic_logout"
+                app:tint="?attr/app_footer_icon_color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

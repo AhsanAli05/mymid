@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">firstapp</string>
+    <string name="tx_submit">Submit</string>
+    <string name="btn_submit">Submit</string>
+    <string name="tx_dashbaord">Dashboard Screen</string>
+</resources>

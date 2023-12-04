@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Firstapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Firstapp" parent="Base.Theme.Firstapp">
+        <item name="app_footer_icon_color">@color/primary_normal</item>
+        <item name="app_heading_color">@color/heading_normal</item>
+    </style>
+
+
+    <style name="AppTheme_NormalCustomer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="app_footer_icon_color">@color/primary_normal</item>
+        <item name="app_heading_color">@color/heading_normal</item>
+    </style>
+
+    <style name="AppTheme_PremiumCustomer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="app_footer_icon_color">@color/primary_premium</item>
+        <item name="app_heading_color">@color/heading_premium</item>
+    </style>
+
+    <style name="AppTheme_PlatinumCustomer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="app_footer_icon_color">@color/primary_platinum</item>
+        <item name="app_heading_color">@color/heading_platinum</item>
+    </style>
+
+    <style name="bottomImageContainerStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+</resources>
